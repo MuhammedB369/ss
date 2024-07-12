@@ -1,0 +1,23 @@
+# Importing essential libraries
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+
+# Loading the dataset
+df = pd.read_csv('Spam SMS Collection.txt', sep='\t', names=['label', 'message'])
+
+#Exploratory Data Analysis (EDA)
+df.shape
+df.columns
+df.dtypes
+df.head()
+df.tail()
+df.info()
+df.describe(include='object')
+
+# Mapping values for label
+df['label'] = df['label'].map({'ham': 0, 'spam': 1})
+df.head()
+df.tail()
