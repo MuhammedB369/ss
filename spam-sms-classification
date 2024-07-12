@@ -256,3 +256,11 @@ if predict_spam(sample_message):
   print('Gotcha! This is a SPAM message.')
 else:
   print('This is a HAM (normal) message.')
+
+# Predicting values 4 - Feedback message
+sample_message = 'Tammy, thanks for choosing Carl’s Car Wash for your express polish. We would love to hear your thoughts on the service. Feel free to text back with any feedback. Safe driving!'
+
+if predict_spam(sample_message):
+  print('Gotcha! This is a SPAM message.')
+else:
+  print('This is a HAM (normal) message.')
